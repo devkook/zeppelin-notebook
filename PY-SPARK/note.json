@@ -1,0 +1,586 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\n\nimport numpy\nimport scipy\nimport pandas\nimport matplotlib\n\nprint \"numpy \" + numpy.__version__\nprint \"scipy \" + scipy.__version__\nprint \"pandas \" + pandas.__version__\nprint \"matplotlib \" + matplotlib.__version__",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:06:54 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462193055710_1115296601",
+      "id": "20160502-214415_231104948",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "numpy 1.8.0rc1\nscipy 0.13.0b1\npandas 0.18.0\nmatplotlib 1.3.1\n"
+      },
+      "dateCreated": "May 2, 2016 9:44:15 PM",
+      "dateStarted": "May 3, 2016 12:06:54 AM",
+      "dateFinished": "May 3, 2016 12:07:54 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nimport platform\nprint(platform.python_version())",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:08:21 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462193465209_876320440",
+      "id": "20160502-215105_359821714",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "2.7.10\n"
+      },
+      "dateCreated": "May 2, 2016 9:51:05 PM",
+      "dateStarted": "May 3, 2016 12:08:21 AM",
+      "dateFinished": "May 3, 2016 12:08:21 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nsc.parallelize([1,2,3]).count() ",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:08:27 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462193652208_-1143566957",
+      "id": "20160502-215412_772836250",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 2, 2016 9:54:12 PM",
+      "dateStarted": "May 3, 2016 12:08:27 AM",
+      "dateFinished": "May 3, 2016 12:08:41 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nimport StringIO\ndef show(p):\n  img \u003d StringIO.StringIO()\n  p.savefig(img, format\u003d\u0027svg\u0027)\n  img.seek(0)\n  print \u0027%html \u0027 + img.buf",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:09:21 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462194173997_-489746116",
+      "id": "20160502-220253_2028936224",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 2, 2016 10:02:53 PM",
+      "dateStarted": "May 3, 2016 12:09:22 AM",
+      "dateFinished": "May 3, 2016 12:09:22 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nimport matplotlib.pyplot as plt\n\n# Test data\nx \u003d [1, 2, 3, 4, 5, 6, 7, 8]\ny \u003d [20, 21, 20.5, 20.81, 21.0, 21.48, 22.0, 5.55]\n\n# Plot\nplt.plot(x, y, linestyle\u003d\u0027dashed\u0027, marker\u003d\u0027o\u0027, color\u003d\u0027red\u0027)\n\nshow(plt)",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:10:45 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462194231495_-2146966898",
+      "id": "20160502-220351_479517780",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003c?xml version\u003d\"1.0\" encoding\u003d\"utf-8\" standalone\u003d\"no\"?\u003e\n\u003c!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n  \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"\u003e\n\u003c!-- Created with matplotlib (http://matplotlib.org/) --\u003e\n\u003csvg height\u003d\"432pt\" version\u003d\"1.1\" viewBox\u003d\"0 0 576 432\" width\u003d\"576pt\" xmlns\u003d\"http://www.w3.org/2000/svg\" xmlns:xlink\u003d\"http://www.w3.org/1999/xlink\"\u003e\n \u003cdefs\u003e\n  \u003cstyle type\u003d\"text/css\"\u003e\n*{stroke-linecap:butt;stroke-linejoin:round;}\n  \u003c/style\u003e\n \u003c/defs\u003e\n \u003cg id\u003d\"figure_1\"\u003e\n  \u003cg id\u003d\"patch_1\"\u003e\n   \u003cpath d\u003d\"\nM0 432\nL576 432\nL576 0\nL0 0\nz\n\" style\u003d\"fill:#ffffff;\"/\u003e\n  \u003c/g\u003e\n  \u003cg id\u003d\"axes_1\"\u003e\n   \u003cg id\u003d\"patch_2\"\u003e\n    \u003cpath d\u003d\"\nM72 388.8\nL518.4 388.8\nL518.4 43.2\nL72 43.2\nz\n\" style\u003d\"fill:#ffffff;\"/\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"line2d_1\"\u003e\n    \u003cpath clip-path\u003d\"url(#p7ff5b81e1d)\" d\u003d\"\nM72 331.2\nL135.771 328.32\nL199.543 329.76\nL263.314 328.867\nL327.086 328.32\nL390.857 326.938\nL454.629 325.44\nL518.4 98.2368\" style\u003d\"fill:none;stroke:#ff0000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;\"/\u003e\n    \u003cdefs\u003e\n     \u003cpath d\u003d\"\nM0 3\nC0.795609 3 1.55874 2.6839 2.12132 2.12132\nC2.6839 1.55874 3 0.795609 3 0\nC3 -0.795609 2.6839 -1.55874 2.12132 -2.12132\nC1.55874 -2.6839 0.795609 -3 0 -3\nC-0.795609 -3 -1.55874 -2.6839 -2.12132 -2.12132\nC-2.6839 -1.55874 -3 -0.795609 -3 0\nC-3 0.795609 -2.6839 1.55874 -2.12132 2.12132\nC-1.55874 2.6839 -0.795609 3 0 3\nz\n\" id\u003d\"md175be6dbf\" style\u003d\"stroke:#000000;stroke-width:0.5;\"/\u003e\n    \u003c/defs\u003e\n    \u003cg clip-path\u003d\"url(#p7ff5b81e1d)\"\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"331.2\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"329.76\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.8672\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"326.9376\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"325.44\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"98.2368\"/\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"line2d_2\"\u003e\n    \u003cpath clip-path\u003d\"url(#p7ff5b81e1d)\" d\u003d\"\nM72 331.2\nL135.771 328.32\nL199.543 329.76\nL263.314 328.867\nL327.086 328.32\nL390.857 326.938\nL454.629 325.44\nL518.4 98.2368\" style\u003d\"fill:none;stroke:#ff0000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;\"/\u003e\n    \u003cg clip-path\u003d\"url(#p7ff5b81e1d)\"\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"331.2\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"329.76\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.8672\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"326.9376\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"325.44\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"98.2368\"/\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"line2d_3\"\u003e\n    \u003cpath clip-path\u003d\"url(#p7ff5b81e1d)\" d\u003d\"\nM72 331.2\nL135.771 328.32\nL199.543 329.76\nL263.314 328.867\nL327.086 328.32\nL390.857 326.938\nL454.629 325.44\nL518.4 372.816\" style\u003d\"fill:none;stroke:#ff0000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;\"/\u003e\n    \u003cg clip-path\u003d\"url(#p7ff5b81e1d)\"\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"331.2\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"329.76\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.8672\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"326.9376\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"325.44\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"372.816\"/\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"line2d_4\"\u003e\n    \u003cpath clip-path\u003d\"url(#p7ff5b81e1d)\" d\u003d\"\nM72 331.2\nL135.771 328.32\nL199.543 329.76\nL263.314 328.867\nL327.086 328.32\nL390.857 326.938\nL454.629 325.44\nL518.4 372.816\" style\u003d\"fill:none;stroke:#ff0000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;\"/\u003e\n    \u003cg clip-path\u003d\"url(#p7ff5b81e1d)\"\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"331.2\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"329.76\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.8672\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"328.32\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"326.9376\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"325.44\"/\u003e\n     \u003cuse style\u003d\"fill:#ff0000;stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#md175be6dbf\" y\u003d\"372.816\"/\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"matplotlib.axis_1\"\u003e\n    \u003cg id\u003d\"xtick_1\"\u003e\n     \u003cg id\u003d\"line2d_5\"\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM0 0\nL0 -4\" id\u003d\"m93b0483c22\" style\u003d\"stroke:#000000;stroke-width:0.5;\"/\u003e\n      \u003c/defs\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_6\"\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM0 0\nL0 4\" id\u003d\"m741efc42ff\" style\u003d\"stroke:#000000;stroke-width:0.5;\"/\u003e\n      \u003c/defs\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_1\"\u003e\n      \u003c!-- 1 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM12.4062 8.29688\nL28.5156 8.29688\nL28.5156 63.9219\nL10.9844 60.4062\nL10.9844 69.3906\nL28.4219 72.9062\nL38.2812 72.9062\nL38.2812 8.29688\nL54.3906 8.29688\nL54.3906 0\nL12.4062 0\nz\n\" id\u003d\"BitstreamVeraSans-Roman-31\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(69.395625 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-31\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_2\"\u003e\n     \u003cg id\u003d\"line2d_7\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_8\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"135.771428571\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_2\"\u003e\n      \u003c!-- 2 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM19.1875 8.29688\nL53.6094 8.29688\nL53.6094 0\nL7.32812 0\nL7.32812 8.29688\nQ12.9375 14.1094 22.625 23.8906\nQ32.3281 33.6875 34.8125 36.5312\nQ39.5469 41.8438 41.4219 45.5312\nQ43.3125 49.2188 43.3125 52.7812\nQ43.3125 58.5938 39.2344 62.25\nQ35.1562 65.9219 28.6094 65.9219\nQ23.9688 65.9219 18.8125 64.3125\nQ13.6719 62.7031 7.8125 59.4219\nL7.8125 69.3906\nQ13.7656 71.7812 18.9375 73\nQ24.125 74.2188 28.4219 74.2188\nQ39.75 74.2188 46.4844 68.5469\nQ53.2188 62.8906 53.2188 53.4219\nQ53.2188 48.9219 51.5312 44.8906\nQ49.8594 40.875 45.4062 35.4062\nQ44.1875 33.9844 37.6406 27.2188\nQ31.1094 20.4531 19.1875 8.29688\" id\u003d\"BitstreamVeraSans-Roman-32\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(132.994553571 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-32\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_3\"\u003e\n     \u003cg id\u003d\"line2d_9\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_10\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"199.542857143\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_3\"\u003e\n      \u003c!-- 3 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM40.5781 39.3125\nQ47.6562 37.7969 51.625 33\nQ55.6094 28.2188 55.6094 21.1875\nQ55.6094 10.4062 48.1875 4.48438\nQ40.7656 -1.42188 27.0938 -1.42188\nQ22.5156 -1.42188 17.6562 -0.515625\nQ12.7969 0.390625 7.625 2.20312\nL7.625 11.7188\nQ11.7188 9.32812 16.5938 8.10938\nQ21.4844 6.89062 26.8125 6.89062\nQ36.0781 6.89062 40.9375 10.5469\nQ45.7969 14.2031 45.7969 21.1875\nQ45.7969 27.6406 41.2812 31.2656\nQ36.7656 34.9062 28.7188 34.9062\nL20.2188 34.9062\nL20.2188 43.0156\nL29.1094 43.0156\nQ36.375 43.0156 40.2344 45.9219\nQ44.0938 48.8281 44.0938 54.2969\nQ44.0938 59.9062 40.1094 62.9062\nQ36.1406 65.9219 28.7188 65.9219\nQ24.6562 65.9219 20.0156 65.0312\nQ15.375 64.1562 9.8125 62.3125\nL9.8125 71.0938\nQ15.4375 72.6562 20.3438 73.4375\nQ25.25 74.2188 29.5938 74.2188\nQ40.8281 74.2188 47.3594 69.1094\nQ53.9062 64.0156 53.9062 55.3281\nQ53.9062 49.2656 50.4375 45.0938\nQ46.9688 40.9219 40.5781 39.3125\" id\u003d\"BitstreamVeraSans-Roman-33\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(196.663794643 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-33\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_4\"\u003e\n     \u003cg id\u003d\"line2d_11\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_12\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"263.314285714\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_4\"\u003e\n      \u003c!-- 4 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM37.7969 64.3125\nL12.8906 25.3906\nL37.7969 25.3906\nz\n\nM35.2031 72.9062\nL47.6094 72.9062\nL47.6094 25.3906\nL58.0156 25.3906\nL58.0156 17.1875\nL47.6094 17.1875\nL47.6094 0\nL37.7969 0\nL37.7969 17.1875\nL4.89062 17.1875\nL4.89062 26.7031\nz\n\" id\u003d\"BitstreamVeraSans-Roman-34\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(260.126785714 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-34\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_5\"\u003e\n     \u003cg id\u003d\"line2d_13\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_14\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"327.085714286\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_5\"\u003e\n      \u003c!-- 5 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM10.7969 72.9062\nL49.5156 72.9062\nL49.5156 64.5938\nL19.8281 64.5938\nL19.8281 46.7344\nQ21.9688 47.4688 24.1094 47.8281\nQ26.2656 48.1875 28.4219 48.1875\nQ40.625 48.1875 47.75 41.5\nQ54.8906 34.8125 54.8906 23.3906\nQ54.8906 11.625 47.5625 5.09375\nQ40.2344 -1.42188 26.9062 -1.42188\nQ22.3125 -1.42188 17.5469 -0.640625\nQ12.7969 0.140625 7.71875 1.70312\nL7.71875 11.625\nQ12.1094 9.23438 16.7969 8.0625\nQ21.4844 6.89062 26.7031 6.89062\nQ35.1562 6.89062 40.0781 11.3281\nQ45.0156 15.7656 45.0156 23.3906\nQ45.0156 31 40.0781 35.4375\nQ35.1562 39.8906 26.7031 39.8906\nQ22.75 39.8906 18.8125 39.0156\nQ14.8906 38.1406 10.7969 36.2812\nz\n\" id\u003d\"BitstreamVeraSans-Roman-35\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(324.255401786 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-35\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_6\"\u003e\n     \u003cg id\u003d\"line2d_15\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_16\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"390.857142857\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_6\"\u003e\n      \u003c!-- 6 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM33.0156 40.375\nQ26.375 40.375 22.4844 35.8281\nQ18.6094 31.2969 18.6094 23.3906\nQ18.6094 15.5312 22.4844 10.9531\nQ26.375 6.39062 33.0156 6.39062\nQ39.6562 6.39062 43.5312 10.9531\nQ47.4062 15.5312 47.4062 23.3906\nQ47.4062 31.2969 43.5312 35.8281\nQ39.6562 40.375 33.0156 40.375\nM52.5938 71.2969\nL52.5938 62.3125\nQ48.875 64.0625 45.0938 64.9844\nQ41.3125 65.9219 37.5938 65.9219\nQ27.8281 65.9219 22.6719 59.3281\nQ17.5312 52.7344 16.7969 39.4062\nQ19.6719 43.6562 24.0156 45.9219\nQ28.375 48.1875 33.5938 48.1875\nQ44.5781 48.1875 50.9531 41.5156\nQ57.3281 34.8594 57.3281 23.3906\nQ57.3281 12.1562 50.6875 5.35938\nQ44.0469 -1.42188 33.0156 -1.42188\nQ20.3594 -1.42188 13.6719 8.26562\nQ6.98438 17.9688 6.98438 36.375\nQ6.98438 53.6562 15.1875 63.9375\nQ23.3906 74.2188 37.2031 74.2188\nQ40.9219 74.2188 44.7031 73.4844\nQ48.4844 72.75 52.5938 71.2969\" id\u003d\"BitstreamVeraSans-Roman-36\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(387.836517857 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-36\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_7\"\u003e\n     \u003cg id\u003d\"line2d_17\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_18\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"454.628571429\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_7\"\u003e\n      \u003c!-- 7 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM8.20312 72.9062\nL55.0781 72.9062\nL55.0781 68.7031\nL28.6094 0\nL18.3125 0\nL43.2188 64.5938\nL8.20312 64.5938\nz\n\" id\u003d\"BitstreamVeraSans-Roman-37\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(451.816071429 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-37\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"xtick_8\"\u003e\n     \u003cg id\u003d\"line2d_19\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#m93b0483c22\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_20\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#m741efc42ff\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_8\"\u003e\n      \u003c!-- 8 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM31.7812 34.625\nQ24.75 34.625 20.7188 30.8594\nQ16.7031 27.0938 16.7031 20.5156\nQ16.7031 13.9219 20.7188 10.1562\nQ24.75 6.39062 31.7812 6.39062\nQ38.8125 6.39062 42.8594 10.1719\nQ46.9219 13.9688 46.9219 20.5156\nQ46.9219 27.0938 42.8906 30.8594\nQ38.875 34.625 31.7812 34.625\nM21.9219 38.8125\nQ15.5781 40.375 12.0312 44.7188\nQ8.5 49.0781 8.5 55.3281\nQ8.5 64.0625 14.7188 69.1406\nQ20.9531 74.2188 31.7812 74.2188\nQ42.6719 74.2188 48.875 69.1406\nQ55.0781 64.0625 55.0781 55.3281\nQ55.0781 49.0781 51.5312 44.7188\nQ48 40.375 41.7031 38.8125\nQ48.8281 37.1562 52.7969 32.3125\nQ56.7812 27.4844 56.7812 20.5156\nQ56.7812 9.90625 50.3125 4.23438\nQ43.8438 -1.42188 31.7812 -1.42188\nQ19.7344 -1.42188 13.25 4.23438\nQ6.78125 9.90625 6.78125 20.5156\nQ6.78125 27.4844 10.7812 32.3125\nQ14.7969 37.1562 21.9219 38.8125\nM18.3125 54.3906\nQ18.3125 48.7344 21.8438 45.5625\nQ25.3906 42.3906 31.7812 42.3906\nQ38.1406 42.3906 41.7188 45.5625\nQ45.3125 48.7344 45.3125 54.3906\nQ45.3125 60.0625 41.7188 63.2344\nQ38.1406 66.4062 31.7812 66.4062\nQ25.3906 66.4062 21.8438 63.2344\nQ18.3125 60.0625 18.3125 54.3906\" id\u003d\"BitstreamVeraSans-Roman-38\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(515.4 401.918125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-38\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"matplotlib.axis_2\"\u003e\n    \u003cg id\u003d\"ytick_1\"\u003e\n     \u003cg id\u003d\"line2d_21\"\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM0 0\nL4 0\" id\u003d\"m728421d6d4\" style\u003d\"stroke:#000000;stroke-width:0.5;\"/\u003e\n      \u003c/defs\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_22\"\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM0 0\nL-4 0\" id\u003d\"mcb0005524f\" style\u003d\"stroke:#000000;stroke-width:0.5;\"/\u003e\n      \u003c/defs\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"388.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_9\"\u003e\n      \u003c!-- 0 --\u003e\n      \u003cdefs\u003e\n       \u003cpath d\u003d\"\nM31.7812 66.4062\nQ24.1719 66.4062 20.3281 58.9062\nQ16.5 51.4219 16.5 36.375\nQ16.5 21.3906 20.3281 13.8906\nQ24.1719 6.39062 31.7812 6.39062\nQ39.4531 6.39062 43.2812 13.8906\nQ47.125 21.3906 47.125 36.375\nQ47.125 51.4219 43.2812 58.9062\nQ39.4531 66.4062 31.7812 66.4062\nM31.7812 74.2188\nQ44.0469 74.2188 50.5156 64.5156\nQ56.9844 54.8281 56.9844 36.375\nQ56.9844 17.9688 50.5156 8.26562\nQ44.0469 -1.42188 31.7812 -1.42188\nQ19.5312 -1.42188 13.0625 8.26562\nQ6.59375 17.9688 6.59375 36.375\nQ6.59375 54.8281 13.0625 64.5156\nQ19.5312 74.2188 31.7812 74.2188\" id\u003d\"BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/defs\u003e\n      \u003cg transform\u003d\"translate(61.953125 392.11125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_2\"\u003e\n     \u003cg id\u003d\"line2d_23\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"331.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_24\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"331.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_10\"\u003e\n      \u003c!-- 20 --\u003e\n      \u003cg transform\u003d\"translate(54.40625 334.51125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-32\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_3\"\u003e\n     \u003cg id\u003d\"line2d_25\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"273.6\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_26\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"273.6\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_11\"\u003e\n      \u003c!-- 40 --\u003e\n      \u003cg transform\u003d\"translate(54.11375 276.91125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-34\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_4\"\u003e\n     \u003cg id\u003d\"line2d_27\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"216.0\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_28\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"216.0\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_12\"\u003e\n      \u003c!-- 60 --\u003e\n      \u003cg transform\u003d\"translate(54.365 219.31125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-36\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_5\"\u003e\n     \u003cg id\u003d\"line2d_29\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"158.4\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_30\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"158.4\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_13\"\u003e\n      \u003c!-- 80 --\u003e\n      \u003cg transform\u003d\"translate(54.340625 161.71125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-38\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_6\"\u003e\n     \u003cg id\u003d\"line2d_31\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"100.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_32\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"100.8\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_14\"\u003e\n      \u003c!-- 100 --\u003e\n      \u003cg transform\u003d\"translate(47.21 104.11125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-31\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n       \u003cuse x\u003d\"127.24609375\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n    \u003cg id\u003d\"ytick_7\"\u003e\n     \u003cg id\u003d\"line2d_33\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"72.0\" xlink:href\u003d\"#m728421d6d4\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"line2d_34\"\u003e\n      \u003cg\u003e\n       \u003cuse style\u003d\"stroke:#000000;stroke-width:0.5;\" x\u003d\"518.4\" xlink:href\u003d\"#mcb0005524f\" y\u003d\"43.2\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n     \u003cg id\u003d\"text_15\"\u003e\n      \u003c!-- 120 --\u003e\n      \u003cg transform\u003d\"translate(47.21 46.51125)scale(0.12 -0.12)\"\u003e\n       \u003cuse xlink:href\u003d\"#BitstreamVeraSans-Roman-31\"/\u003e\n       \u003cuse x\u003d\"63.623046875\" xlink:href\u003d\"#BitstreamVeraSans-Roman-32\"/\u003e\n       \u003cuse x\u003d\"127.24609375\" xlink:href\u003d\"#BitstreamVeraSans-Roman-30\"/\u003e\n      \u003c/g\u003e\n     \u003c/g\u003e\n    \u003c/g\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"patch_3\"\u003e\n    \u003cpath d\u003d\"\nM72 43.2\nL518.4 43.2\" style\u003d\"fill:none;stroke:#000000;\"/\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"patch_4\"\u003e\n    \u003cpath d\u003d\"\nM518.4 388.8\nL518.4 43.2\" style\u003d\"fill:none;stroke:#000000;\"/\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"patch_5\"\u003e\n    \u003cpath d\u003d\"\nM72 388.8\nL518.4 388.8\" style\u003d\"fill:none;stroke:#000000;\"/\u003e\n   \u003c/g\u003e\n   \u003cg id\u003d\"patch_6\"\u003e\n    \u003cpath d\u003d\"\nM72 388.8\nL72 43.2\" style\u003d\"fill:none;stroke:#000000;\"/\u003e\n   \u003c/g\u003e\n  \u003c/g\u003e\n \u003c/g\u003e\n \u003cdefs\u003e\n  \u003cclipPath id\u003d\"p7ff5b81e1d\"\u003e\n   \u003crect height\u003d\"345.6\" width\u003d\"446.4\" x\u003d\"72.0\" y\u003d\"43.2\"/\u003e\n  \u003c/clipPath\u003e\n \u003c/defs\u003e\n\u003c/svg\u003e\n\n"
+      },
+      "dateCreated": "May 2, 2016 10:03:51 PM",
+      "dateStarted": "May 3, 2016 12:10:21 AM",
+      "dateFinished": "May 3, 2016 12:10:21 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\n# Load data\ndata \u003d sc.parallelize([Row(name\u003d\u0027Spark\u0027, seq\u003d1), Row(name\u003d\u0027Meetup\u0027, seq\u003d2)])\ndf \u003d sqlc.inferSchema(data)\n\n# Register to use in SQL\ndf.registerTempTable(\u0027data\u0027)",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:11:22 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462194265020_-1953007479",
+      "id": "20160502-220425_1521670958",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "/Users/diginori/M/incubator-zeppelin/interpreter/spark/pyspark/pyspark.zip/pyspark/sql/context.py:283: UserWarning: inferSchema is deprecated, please use createDataFrame instead.\n"
+      },
+      "dateCreated": "May 2, 2016 10:04:25 PM",
+      "dateStarted": "May 3, 2016 12:11:22 AM",
+      "dateFinished": "May 3, 2016 12:11:22 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val scalaDF \u003d sqlContext.sql(\"SELECT * FROM data\")",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:11:55 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 89.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "name",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "seq",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "name",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "seq",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462194443244_2011504839",
+      "id": "20160502-220723_1289202001",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "scalaDF: org.apache.spark.sql.DataFrame \u003d [name: string, seq: bigint]\n"
+      },
+      "dateCreated": "May 2, 2016 10:07:23 PM",
+      "dateStarted": "May 3, 2016 12:11:46 AM",
+      "dateFinished": "May 3, 2016 12:11:51 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "scalaDF.show",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:12:23 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462194454091_-879883145",
+      "id": "20160502-220734_676845812",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "+------+---+\n|  name|seq|\n+------+---+\n| Spark|  1|\n|Meetup|  2|\n+------+---+\n\n"
+      },
+      "dateCreated": "May 2, 2016 10:07:34 PM",
+      "dateStarted": "May 3, 2016 12:12:23 AM",
+      "dateFinished": "May 3, 2016 12:12:24 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.put(\"scalaList\",scalaDF.collect.toList)",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:14:13 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462195140929_-1986022553",
+      "id": "20160502-221900_1473689214",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 2, 2016 10:19:00 PM",
+      "dateStarted": "May 3, 2016 12:14:13 AM",
+      "dateFinished": "May 3, 2016 12:14:14 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\npy_list \u003d z.get(\"scalaList\")",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:14:48 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462195265316_197382006",
+      "id": "20160502-222105_629936933",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 2, 2016 10:21:05 PM",
+      "dateStarted": "May 3, 2016 12:14:48 AM",
+      "dateFinished": "May 3, 2016 12:14:48 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nprint py_list",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:15:04 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202069815_-2002435261",
+      "id": "20160503-001429_1544093139",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "List([Spark,1], [Meetup,2])\n"
+      },
+      "dateCreated": "May 3, 2016 12:14:29 AM",
+      "dateStarted": "May 3, 2016 12:15:04 AM",
+      "dateFinished": "May 3, 2016 12:15:04 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.put(\"scalaDF\",scalaDF)",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:15:27 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202104220_-1792115530",
+      "id": "20160503-001504_1386748813",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 3, 2016 12:15:04 AM",
+      "dateStarted": "May 3, 2016 12:15:27 AM",
+      "dateFinished": "May 3, 2016 12:15:27 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\npy_df \u003d z.get(\"scalaDF\")",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:15:47 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202127270_638004496",
+      "id": "20160503-001527_812819947",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "May 3, 2016 12:15:27 AM",
+      "dateStarted": "May 3, 2016 12:15:47 AM",
+      "dateFinished": "May 3, 2016 12:15:47 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nprint py_df",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:16:01 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202147580_1260775047",
+      "id": "20160503-001547_709517665",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "[name: string, seq: bigint]\n"
+      },
+      "dateCreated": "May 3, 2016 12:15:47 AM",
+      "dateStarted": "May 3, 2016 12:16:01 AM",
+      "dateFinished": "May 3, 2016 12:16:01 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nz.put(\"pyDF\",df)",
+      "authenticationInfo": {},
+      "dateUpdated": "May 3, 2016 12:17:11 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202161419_751752253",
+      "id": "20160503-001601_1617854047",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "Traceback (most recent call last):\n  File \"/var/folders/4x/8yynlzws0cxb419k51686h4r0000gn/T/zeppelin_pyspark-4790516049025905473.py\", line 235, in \u003cmodule\u003e\n    eval(compiledCode)\n  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n  File \"/var/folders/4x/8yynlzws0cxb419k51686h4r0000gn/T/zeppelin_pyspark-4790516049025905473.py\", line 76, in put\n    self.__setitem__(key, value)\n  File \"/var/folders/4x/8yynlzws0cxb419k51686h4r0000gn/T/zeppelin_pyspark-4790516049025905473.py\", line 61, in __setitem__\n    self.z.put(key, item)\n  File \"/Users/diginori/M/incubator-zeppelin/interpreter/spark/pyspark/py4j-0.9-src.zip/py4j/java_gateway.py\", line 804, in __call__\n    [get_command_part(arg, self.pool) for arg in new_args])\n  File \"/Users/diginori/M/incubator-zeppelin/interpreter/spark/pyspark/py4j-0.9-src.zip/py4j/protocol.py\", line 278, in get_command_part\n    command_part \u003d REFERENCE_TYPE + parameter._get_object_id()\n  File \"/Users/diginori/M/incubator-zeppelin/interpreter/spark/pyspark/pyspark.zip/pyspark/sql/dataframe.py\", line 842, in __getattr__\n    \"\u0027%s\u0027 object has no attribute \u0027%s\u0027\" % (self.__class__.__name__, name))\nAttributeError: \u0027DataFrame\u0027 object has no attribute \u0027_get_object_id\u0027\n"
+      },
+      "dateCreated": "May 3, 2016 12:16:01 AM",
+      "dateStarted": "May 3, 2016 12:17:11 AM",
+      "dateFinished": "May 3, 2016 12:17:11 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1462202231316_-524151721",
+      "id": "20160503-001711_1149985047",
+      "dateCreated": "May 3, 2016 12:17:11 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "pySpark",
+  "id": "2BM3RMM7C",
+  "angularObjects": {
+    "2BKUB26AD:shared_process": [],
+    "2BJTVJD36:shared_process": [],
+    "2BKRNQ1D3:shared_process": [],
+    "2BM7B1YN7:shared_process": [],
+    "2BH7UQFRZ:shared_process": [],
+    "2BJX2EDJC:shared_process": [],
+    "2BJC8PFTD:shared_process": [],
+    "2BKWVU3RK:shared_process": [],
+    "2BHJ7A4B8:shared_process": [],
+    "2BJZHCJVX:shared_process": [],
+    "2BH9M64HP:shared_process": [],
+    "2BJ3KNETR:shared_process": [],
+    "2BKMSJS23:shared_process": [],
+    "2BJ7Q54BV:shared_process": [],
+    "2BK2ZM6EG:shared_process": [],
+    "2BGW7Y3VK:shared_process": [],
+    "2BGU3Z55R:shared_process": [],
+    "2BGQFT8PV:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
